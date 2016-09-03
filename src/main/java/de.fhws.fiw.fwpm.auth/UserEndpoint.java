@@ -71,9 +71,9 @@ public class UserEndpoint {
 
 	private String login(String basicUser) {
 		StringBuilder stringBuilder = new StringBuilder();
-		stringBuilder.append("tokenPart1.");
+		stringBuilder.append("tokenPart.");
 		stringBuilder.append(newToken(basicUser));
-		stringBuilder.append(".tokenPart2");
+		stringBuilder.append(".tokenPart");
 
 		tokenCache.addToken(stringBuilder.toString());
 		return stringBuilder.toString();

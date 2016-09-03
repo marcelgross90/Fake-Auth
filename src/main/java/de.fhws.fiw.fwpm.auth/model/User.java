@@ -20,10 +20,10 @@ public class User {
 	private String telephoneNumber;
 	private String thumbnailPhoto;
 	private String userPrincipalName;
-	private int cp;
+	private int creditPoints;
 
 	public User() {
-		this.cp = (int) (Math.random() * 120);
+		this.creditPoints = (int) (Math.random() * 120);
 	}
 
 	public User(String city, String cn, String degreeProgram, String emailAddress, String facultyName, String firstName, String lastName,
@@ -44,7 +44,7 @@ public class User {
 		this.telephoneNumber = telephoneNumber;
 		this.thumbnailPhoto = thumbnailPhoto;
 		this.userPrincipalName = userPrincipalName;
-		this.cp = (int) (Math.random() * 120);
+		this.creditPoints = (int) (Math.random() * 120);
 	}
 
 	public String getCity() {
@@ -165,5 +165,13 @@ public class User {
 
 	public void setUserPrincipalName(String userPrincipalName) {
 		this.userPrincipalName = userPrincipalName;
+	}
+
+	public int getCreditPoints() {
+		return creditPoints;
+	}
+
+	public void setCreditPoints(int creditPoints) {
+		this.creditPoints = creditPoints;
 	}
 }
